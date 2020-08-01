@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button
+{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background: var(--main-bg-col);
+}
+
+:root 
+{
+    --main-bg-col:#EDE6E3;
+    --main-fg-col:#395b50;
+    --std-margin: 96px;
+}
+
+.columntxt
+{
+    float: left;
+    width: 50%;
+}
+
+.columnimg
+{
+    float: left;
+    width: 50%;
+    text-align:center;
+}
+
+@font-face {
+    font-family:Inter-Regular;
+    src:url(fonts/Inter-Regular.woff);
+}
+
+@font-face {
+    font-family:Inter-SemiBold;
+    src:url(fonts/Inter-SemiBold.woff);
+}
+
+@media screen and (max-width: 1024px) {
+    .columntxt {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .columnimg {
+        width: 100%;
+    }
+}
+
+.header 
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 600%;
+    margin-left: var(--std-margin);
+    margin-top: 3.5em;
+    float:left;
+    color: var(--main-fg-col);
+}
+
+.desc 
+{
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 150%;
+    margin-left: var(--std-margin);
+    margin-top: 8px;
+    float:left;
+    color: var(--main-fg-col);
+}
+
+.footer 
+{
+    font-family: 'Inter-Regular', sans-serif;
+    display:block;
+    margin-left: var(--std-margin);
+    margin-bottom: var(--std-margin);
+    position: fixed;
+    bottom: 0;
+}
+
+.link
+{
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+    color: var(--main-fg-col);
+}
+
+a:hover
+{
+    color: #F2F7F2;
+}
+
+.line
+{
+    width:100%;
+    height:12px;
+    background: var(--main-fg-col);
+}
+
+ul 
+{
+    display: table;
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+    padding-right: 32px;
+}
