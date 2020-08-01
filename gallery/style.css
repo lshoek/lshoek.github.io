@@ -1,0 +1,39 @@
+@font-face {
+    font-family:Inter-Regular;
+    src:url(fonts/Inter-Regular.woff);
+}
+
+.glslGallery 
+{
+	-moz-column-width: 16em;
+	-webkit-column-width: 16em;
+}
+
+.glslGallery_openFrameIcon 
+{
+	display: none;
+}
+
+.glslGallery_item 
+{
+	margin-bottom:32px;
+	margin-right:32px;
+}
+
+.header
+{
+	font-family:'Playfair Display';
+	font-size:64px;
+	color:#11151C;
+	margin-left:64px;
+	margin-bottom:0px;
+}
+
+.desc 
+{
+    font-family: 'Inter-Regular', sans-serif;
+    font-size:24px;
+    color:#11151C;
+    margin-left:64px;
+    margin-top:8px;
+}
