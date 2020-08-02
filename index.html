@@ -1,40 +1,226 @@
+<!-- 
+
+  Lesley van Hoek
+    lesleyvanhoek.nl
+
+  Original template developed by Nisar Hassan Naqvi
+    https://github.com/nisarhassan12/portfolio-template/
+    https://nisar.dev
+
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>lesleyvanhoek</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> 
-    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-    <link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> 
+  <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+  <title>lesleyvanhoek</title>
+
+  <meta name="description" content="software developer, researcher & artist in creative technology">
+  <meta name="keywords" content="lesley van hoek creative technology technologies media software developer" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <div>
-    	<div class="columntxt">
-    	    <p class="header">Lesley van Hoek</p>
-    	    <p class="desc">software developer, researcher & artist in creative technology</p>
-        </div>
-        <div class="columnimg">
-            <a href="/gallery">
-                <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/lshoek/dotfrags/master/web/random.fs" width="512" height="512" href="/gallery" style="margin-top:8em; width:75%"></canvas>
-            </a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <ul>
-            <li><a class="link" >portfolio (wip)</a></il>
-            <li><a class="link" href="https://instagram.com/lesleyvanhoek">instagram</a></il>
-            <li><a class="link" href="https://github.com/lshoek">github</a></il>
-            <li><a class="link" href="https://soundcloud.com/kuriosadj">soundcloud</a></il>
-            <li><a class="link" href="https://www.linkedin.com/in/lesleyvanhoek/">linkedin</a></il>
-            <li><a class="link" href="mailto:lesleyvanhoek@hotmail.com">email</a></il>
-            <li><a class="link" href="/pdf/resume.pdf">resume</a></il>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">portfolio</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">about</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">contact</a>
+          </li>
         </ul>
+      </nav>
     </div>
-	<div class="line"></div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Lesley van Hoek</span>
+        </h1>
+        <p>software developer, researcher & artist in creative technology</p>
+        <a href="#work" class="btn">View portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <div class="separator"></div>
+
+     <!-- ***** Shader ***** -->
+
+    <section class="shader" id="shader">
+      <div class="row">
+          <a href="/gallery">
+              <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/lshoek/dotfrags/master/web/random.fs" width="512" height="512" href="/gallery"></canvas>
+          </a>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>portfolio</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Master's thesis (WIP)</h3>
+              <p>
+                Working title: Evolving virtual embodied agents using external artifact evaluations.
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/lshoek/creative-evo-simulator" class="link__text">View Demo <span>&rarr;</span></a>
+                <a href="https://github.com/lshoek/creative-evo-simulator" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/neatures.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>And so on, and so forth</h3>
+              <p>
+                Interactive installation, showcased at the Certainty Expo in _V2, Rotterdam (2019) and Sonaural in WORM, Rotterdam (2020).
+              </p>
+
+              <div class="work__links">
+                <a href="https://www.youtube.com/watch?v=XyjLAlNoxWo" class="link__text">View Demo <span>&rarr;</span></a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <iframe width="640" height="360" src="https://www.youtube.com/embed/XyjLAlNoxWo" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Artefacts of Verisimilitudes</h3>
+              <p>
+                Interactive installation, showcased at the Parallells Expo in Peron E, Utrecht (2019)
+              </p>
+
+              <div class="work__links">
+                <a href="#" class="link__text">View Demo <span>&rarr;</span></a>
+                <a href="https://github.com/lshoek/verisimilitudes">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <iframe src="https://player.vimeo.com/video/347633573" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>about</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              All-round creative developer with a strong interest in computer graphics, XR, innovative games, installation art and digital culture. My work lies at the intersection of science, art and technology. Currently (full-time) MSc student at Media Technology in Leiden, but I am open to taking on short-term projects on the side.<br><br>
+              For more information about my proficiency, please refer to my resume below.
+            </p>
+            <a href="/pdf/resume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" src="images/profile.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="separator"></div>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>find me</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking to realize a project in the form of an application or interactive installation? Need an extra programmer on your team? Or just want to meet? Feel free to let me know. Please reach out to me via email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:lesleyvanhoek@hotmail.com" class="btn">lesleyvanhoek@hotmail.com</a>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+
+        <li class="footer__social-link-item">
+          <a href="https://instagram.com/lesleyvanhoek/">
+            <img src="./images/instagram.svg" title="instagram" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+
+        <li class="footer__social-link-item">
+          <a href="https://github.com/lshoek/" title="github">
+            <img src="./images/github.svg" class="footer__social-image" alt="github">
+          </a>
+        </li>
+
+        <li class="footer__social-link-item">
+          <a href="https://soundcloud.com/kuriosadj/">
+            <img src="./images/soundcloud.svg" title="soundcloud" class="footer__social-image" alt="soundcloud">
+          </a>
+        </li>
+
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/lesleyvanhoek/">
+            <img src="./images/linkedin.svg" title="linkedin" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer__bottom-credits">
+        &copy; 2020 - Original template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
 
 </html>
