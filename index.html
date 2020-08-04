@@ -28,6 +28,10 @@
 
 <body>
   <header class="header" role="banner" id="top">
+    
+    <div class="background-shader">
+      <canvas id="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/lshoek/dotfrags/master/web/random.fs" width="512" height="512"></canvas>
+    </div>
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
@@ -53,18 +57,6 @@
   </header>
 
   <main role="main">
-
-    <div class="separator"></div>
-
-     <!-- ***** Shader ***** -->
-
-    <section class="shader" id="shader">
-      <div class="row">
-          <a href="/gallery">
-              <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/lshoek/dotfrags/master/web/random.fs" width="512" height="512" href="/gallery"></canvas>
-          </a>
-      </div>
-    </section>
 
     <div class="separator"></div>
 
@@ -119,7 +111,7 @@
               </p>
 
               <div class="work__links">
-                <a href="#" class="link__text">View Demo <span>&rarr;</span></a>
+                <a href="https://vimeo.com/347633573" class="link__text">View Demo <span>&rarr;</span></a>
                 <a href="https://github.com/lshoek/verisimilitudes">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>

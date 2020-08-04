@@ -41,3 +41,12 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+// glslCanvas resolution
+var canvas = document.getElementById("glslCanvas");
+var sandbox = new GlslCanvas(canvas);
+
+var quality = 2; // 1 = normal
+canvas.width = window.innerWidth / quality;
+canvas.height = window.innerHeight / quality;
+canvas.style.transform = 'translate(-50%,-50%) scale('+quality+')';

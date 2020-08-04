@@ -398,10 +398,16 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Header ----- */
 /* --------------------------------------- */
 
+#glslCanvas {
+    background: var(--pinkish);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+}
+
 .header {
-    background: 
-        var(--pinkish);
-        /*url('./images/header.jpg');*/
+    background: var(--pinkish);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -430,20 +436,6 @@ body:not(.user-is-tabbing) a:focus {
     .header__text p {
         transform: scale(.8);
     }
-}
-
-/* --------------------------------------- */
-/* ----- Shader ----- */
-/* --------------------------------------- */
-
-.shader {
-    text-align: center;
-    padding: var(--gutter-medium) 0 var(--gutter-normal);
-}
-
-.shader__canvas {
-    max-width: 1024px
-    align-items: center;
 }
 
 /* --------------------------------------- */
