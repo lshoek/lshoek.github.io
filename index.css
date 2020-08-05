@@ -472,6 +472,8 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     font-size: 0;
     line-height: 0;
+    outline: 2px solid transparent;
+    transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 .work__image-box:hover {
