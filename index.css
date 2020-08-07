@@ -28,13 +28,9 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
     --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
-
-    --pinkish: #ede6e3;
-    --greenish: #395b50;
+    --platinum: #ede6e3;
+    --green: #395b50;
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -47,7 +43,7 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid var(--greenish);
+    --border-light: 1px solid var(--green);
 }
 
 html {
@@ -66,9 +62,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--greenish);
+    color: var(--green);
     line-height: var(--line-height-normal);
-    background: var(--pinkish);
+    background: var(--platinum);
     overflow-x: hidden;
 }
 
@@ -124,7 +120,7 @@ h3 {
     font-family: 'Playfair Display', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--greenish);
+    color: var(--green);
 }
 
 .heading-primary {
@@ -149,7 +145,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--greenish);
+    background: var(--green);
     margin: var(--gutter-small) 0;
 }
 
@@ -187,7 +183,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--greenish);
+    color: var(--green);
     font-weight: 400;
     font-family: 'Inter-Regular', sans-serif;
     transition: all .1s;
@@ -241,7 +237,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn:hover,
 .btn:focus {
-    color: var(--pinkish);
+    color: var(--platinum);
 }
 
 .btn:hover::after,
@@ -266,7 +262,7 @@ body:not(.user-is-tabbing) a:focus {
     bottom: 0;
     left: 0;
     right: 100%;
-    background: var(--pinkish);
+    background: var(--platinum);
     height: 5%;
     z-index: -1;
     transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -380,7 +376,7 @@ body:not(.user-is-tabbing) a:focus {
     right: 100%;
     display: inline-block;
     height: 1px;
-    background: var(--greenish);
+    background: var(--green);
     transition: all .1s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
@@ -399,7 +395,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 #glslCanvas {
-    background: var(--pinkish);
+    background: var(--platinum);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -414,7 +410,7 @@ body:not(.user-is-tabbing) a:focus {
  }
 
 .header {
-    background: var(--pinkish);
+    background: var(--platinum);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -607,8 +603,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    color: var(--greenish);
+    filter: brightness(0) saturate(100%) invert(29%) sepia(43%) saturate(296%) hue-rotate(109deg) brightness(98%) contrast(92%);
     height: 4rem;
+}
+
+.footer__social-image:hover {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(83%) saturate(4482%) hue-rotate(331deg) brightness(101%) contrast(101%);
 }
 
 .footer__bottom-credits {
