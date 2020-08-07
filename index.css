@@ -526,6 +526,11 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.proj__image {
+    max-width: 640px;
+    margin-bottom: 2rem;
+}
+
 @media(min-width: 901px) {
     .proj__image-box {
         display: flex;
