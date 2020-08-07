@@ -1,0 +1,78 @@
+<!-- 
+
+  Lesley van Hoek
+    lesleyvanhoek.nl
+
+  Original template developed by Nisar Hassan Naqvi
+    https://github.com/nisarhassan12/portfolio-template/
+    https://nisar.dev
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> 
+
+  <title>lesleyvanhoek</title>
+
+  <meta name="description" content="software developer, researcher & artist in creative technology">
+  <meta name="keywords" content="lesley van hoek creative technology technologies media software developer" />
+  <link rel="stylesheet" href="../index.css" />
+</head>
+
+<body>
+
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="../index.html#work" class="nav__link">portfolio</a></li>
+        <li class="nav__item">
+          <a href="../index.html#about" class="nav__link">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="../index.html#contact" class="nav__link">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main role="main">
+
+  <section class="proj" id="proj">
+    <div class="row">
+      <div class="proj__boxes">
+
+        <div class="proj__box">
+          <div class="proj__text">
+            <h3>Video Redundancy</h3>
+            <p>
+              There exists a vast amount of intelligent tricks behind all digital video to reduce the memory load that comes with storing visual information. It is because of the way digital video is stored and interpreted by software that the manipulation of the contents--e.g. data moshing--can produce interesting visual glitches. This has been extensively exploited in the past (and present) in the practice of video glitch art. My work is an ode to the underlying mechanisms of such glitches. 
+              <br><br>
+              Instead of manipulating compressed video data directly, here, motion vectors of a source video have been extracted through a codec. This information is typically used to perform predictive movement calculations to generate inter-frames, which are expressed in one or more neighboring frames. This an extremely effective technique to eliminate redundant data. Then, the source video and motion vectors are fed to a custom program to produce a new set of moving images that only show extracted motion information between frames. The result is a confusing but spectacular re-interpretation of the source video expressed only in motions.
+              <br><br>
+              None of the information that is displayed exists in the source video. With the exception of colors that have been assigned to the motion lines, the image does not consist of any data that is stored on the machine that runs it. Yet, it is possible to recognize the original video in the confusing web of motions. 
+            </p>
+            <div class="proj__links">
+              <a href="https://www.youtube.com/watch?v=KKL8lleHQ8k" target="_blank" class="link__text">View Demo <span>&rarr;</span></a>
+              <a href="https://github.com/lshoek/mpegflow" title="View Source Code" target="_blank">
+                <img src="../images/github.svg" class="proj__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="proj__image-box">
+            <img src="" class="proj__image"/>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/KKL8lleHQ8k" frameborder="0" allow="fullscreen" scrolling="no"></iframe>
+            <script>iFrameResize({log:true})</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
