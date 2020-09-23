@@ -400,7 +400,6 @@ body:not(.user-is-tabbing) a:focus {
     top: 50%;
     left: 50%;
     z-index: 0;
-    /*transform:translate(-50%,-50%); /* scale(0.5);*/
 }
 
 @media only screen
