@@ -9,7 +9,7 @@ precision highp float;
 uniform vec2 u_resolution;
 uniform float u_time;
 
-vec3 u_color0 = vec3(0.215, 0.074, 0.172); 
+vec3 u_color0 = vec3(0.090, 0.192, 0.211); 
 vec3 u_color1 = vec3(0.101, 0.078, 0.137);
 
 vec2 tile(vec2 st, float zoom)
