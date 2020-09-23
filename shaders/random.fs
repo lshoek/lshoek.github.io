@@ -4,17 +4,13 @@
 #ifdef GL_ES
 precision highp float;
 #endif
-
 #define inv(x) 1.0 - x
-#define flip(v) (v.y,v.x)
-#define PI     3.14159265359
-#define TWO_PI 6.28318530718
-
-uniform vec3 u_color0 = vec3(0.215, 0.074, 0.172);
-uniform vec3 u_color1 = vec3(0.101, 0.078, 0.137);
 
 uniform vec2 u_resolution;
 uniform float u_time;
+
+vec3 u_color0 = vec3(0.215, 0.074, 0.172); 
+vec3 u_color1 = vec3(0.101, 0.078, 0.137);
 
 vec2 tile(vec2 st, float zoom)
 {
@@ -48,8 +44,7 @@ float random (vec2 st)
 void main()
 {
     vec2 st = gl_FragCoord.xy/u_resolution;
-    float time = u_time/2.5;
-    float stripeoffset = u_time/8.0;
+    float stripeoffset = u_time/16.0;
     float thickness = 0.10;
     const float tiles = 4.0;
     
