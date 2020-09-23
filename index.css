@@ -28,9 +28,12 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --pink: #ff3258;
+    --cherise: #f61067;
+    --xiketic: #1a1423;
     --platinum: #ede6e3;
-    --green: #395b50;
+
+    --cherise-filter: invert(25%) sepia(87%) saturate(7453%) hue-rotate(329deg) brightness(99%) contrast(95%);
+    --platinum-filter: invert(91%) sepia(9%) saturate(305%) hue-rotate(320deg) brightness(106%) contrast(86%);
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -43,7 +46,7 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid var(--green);
+    --border-light: 1px solid var(--platinum);
 }
 
 html {
@@ -62,9 +65,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--green);
+    color: var(--platinum);
     line-height: var(--line-height-normal);
-    background: var(--platinum);
+    background: var(--xiketic);
     overflow-x: hidden;
 }
 
@@ -120,7 +123,7 @@ h3 {
     font-family: 'Playfair Display', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--green);
+    color: var(--platinum);
 }
 
 .heading-primary {
@@ -145,7 +148,7 @@ h2::after {
     display: block;
     height: 2px;
     width: 10rem;
-    background: var(--green);
+    background: var(--platinum);
     margin: var(--gutter-small) 0;
 }
 
@@ -183,7 +186,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--green);
+    color: var(--platinum);
     font-weight: 400;
     font-family: 'Inter-Regular', sans-serif;
     transition: all .1s;
@@ -196,7 +199,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--cherise);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -205,7 +208,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--cherise);
 }
 
 .btn {
@@ -214,7 +217,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid  var(--cherise);
     font-weight: 400;
 }
 
@@ -229,7 +232,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     left: 0;
     right: 100%;
-    background: var(--pink);
+    background: var(--cherise);
     height: 100%;
     z-index: -1;
     transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -237,13 +240,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn:hover,
 .btn:focus {
-    color: var(--platinum);
+    color: var(--xiketic);
 }
 
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
-    background: var(--pink);
+    background: var(--cherise);
 }
 
 .link__text {
@@ -252,7 +255,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: .6rem;
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid var(--pink);
+    border-bottom: 1px solid var(--cherise);
 }
 
 .link__text::after {
@@ -262,7 +265,7 @@ body:not(.user-is-tabbing) a:focus {
     bottom: 0;
     left: 0;
     right: 100%;
-    background: var(--platinum);
+    background: var(--xiketic);
     height: 5%;
     z-index: -1;
     transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -274,13 +277,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .link__text:hover,
 .link__text:focus {
-    color: var(--pink);
+    color: var(--cherise);
 }
 
 .link__text:hover::after,
 .link__text:focus:after {
     right: 0;
-    background: var(--pink);
+    background: var(--cherise);
 }
 
 .link__text span {
@@ -299,7 +302,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: var(--cherise);
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -376,18 +379,18 @@ body:not(.user-is-tabbing) a:focus {
     right: 100%;
     display: inline-block;
     height: 1px;
-    background: var(--green);
+    background: var(--platinum);
     transition: all .1s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 .nav__link:hover {
-    color: var(--pink);
+    color: var(--cherise);
 }
 
 .nav__link:hover::after {
     right: 0;
     height: 1px;
-    background: var(--pink);
+    background: var(--cherise);
 }
 
 /* --------------------------------------- */
@@ -395,7 +398,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 #glslCanvas {
-    background: var(--platinum);
+    background: var(--xiketic);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -409,7 +412,7 @@ body:not(.user-is-tabbing) a:focus {
  }
 
 .header {
-    background: var(--platinum);
+    background: var(--xiketic);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -472,7 +475,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box:hover {
-    outline: 2px solid var(--pink);
+    outline: 2px solid var(--cherise);
 }
 
 /* --------------------------------------- */
@@ -607,12 +610,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-image {
-    filter: brightness(0) saturate(100%) invert(29%) sepia(43%) saturate(296%) hue-rotate(109deg) brightness(98%) contrast(92%);
+    filter: var(--platinum-filter);
     height: 4rem;
 }
 
 .footer__social-image:hover {
-    filter: brightness(0) saturate(100%) invert(37%) sepia(83%) saturate(4482%) hue-rotate(331deg) brightness(101%) contrast(101%);
+    filter: var(--cherise-filter);
 }
 
 .footer__bottom-credits {
