@@ -45,8 +45,7 @@ float rand (vec2 st)
 void main()
 {
     vec2 st = gl_FragCoord.xy/u_resolution;
-    float time = u_time/2.5;
-    float stripeoffset = u_time/8.0;
+    float stripeoffset = u_time/16.0;
     float thickness = 0.065;
     const float tiles = 4.0;
     float offset = 0.2/tiles;
