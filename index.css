@@ -32,6 +32,8 @@
     --xiketic: #1a1423;
     --platinum: #ede6e3;
 
+    --xiketic-transparent: #1a142380;
+
     --seagreencrayola-filter: invert(62%) sepia(92%) saturate(877%) hue-rotate(114deg) brightness(101%) contrast(102%);
     --platinum-filter: invert(91%) sepia(9%) saturate(305%) hue-rotate(320deg) brightness(106%) contrast(86%);
 
@@ -47,6 +49,7 @@
     --gutter-small: 2rem;
 
     --border-light: 1px solid var(--platinum);
+    --default-transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 html {
@@ -235,7 +238,7 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--seagreencrayola);
     height: 100%;
     z-index: -1;
-    transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: var(--default-transition);
 }
 
 .btn:hover,
@@ -268,7 +271,7 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--xiketic);
     height: 5%;
     z-index: -1;
-    transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: var(--default-transition);
 }
 
 .link__text:focus {
@@ -380,7 +383,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     height: 1px;
     background: var(--platinum);
-    transition: all .1s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: var(--default-transition);
 }
 
 .nav__link:hover {
@@ -454,6 +457,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box {
+    position:relative;
     margin: 0 0 0 2rem;
 }
 
@@ -468,15 +472,39 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+    position: relative;
     font-size: 0;
     line-height: 0;
     outline: 2px solid transparent;
-    transition: all 0.1s cubic-bezier(1, 0.68, 0.16, 0.9);
+    transition: var(--default-transition);
+}
+
+.work__image__bottom {
+    position: absolute;
+    transition: var(--default-transition);
+}
+
+.work__image__top {
+    transition: var(--default-transition);
 }
 
 .work__image-box:hover {
-    outline: 2px solid var(--seagreencrayola);
+    outline: 2px solid var(--platinum);
 }
+
+.work__image-box:hover .work__image__top {
+    opacity: 0%;
+}
+
+.work__image__textbox {
+    position: absolute;
+    line-height: 1.25;
+    margin: 16px;
+    color: var(--platinum);
+    background-color: var(--xiketic-transparent);
+    font-size: var(--font-size-small);
+}
+
 
 /* --------------------------------------- */
 /* ----- Project ----- */
