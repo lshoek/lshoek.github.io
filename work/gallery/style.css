@@ -1,6 +1,9 @@
 @font-face {
-    font-family:Inter-Regular;
-    src:url(fonts/Inter-Regular.woff);
+	font-family: Bold;
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../../fonts/MonaspaceKrypton-Bold.woff2') format('woff2');
 }
 
 .glslGallery 
@@ -22,18 +25,9 @@
 
 .header
 {
-	font-family:'Playfair Display';
+	font-family:'Bold';
 	font-size:64px;
 	color:#11151C;
 	margin-left:64px;
 	margin-bottom:0px;
-}
-
-.desc 
-{
-    font-family: 'Inter-Regular', sans-serif;
-    font-size:24px;
-    color:#11151C;
-    margin-left:64px;
-    margin-top:8px;
 }
