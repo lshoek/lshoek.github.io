@@ -342,10 +342,11 @@ and (max-device-width : 480px) {
 
 .work__image-box {
 	width: 256px;
+	height: 256px;
 	position: relative;
 	font-size: 0;
 	line-height: 0;
-	outline: 2px solid transparent;
+	border: 2px solid transparent;
 	transition: var(--default-transition);
 }
 
@@ -359,7 +360,7 @@ and (max-device-width : 480px) {
 }
 
 .work__image-box:hover {
-	outline: 2px solid var(--color-front);
+	border: 2px solid var(--color-front);
 }
 
 .work__image-box:hover .work__image__top {
