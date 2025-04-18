@@ -341,6 +341,7 @@ and (max-device-width : 480px) {
 }
 
 .work__image-box {
+	width: 256px;
 	position: relative;
 	font-size: 0;
 	line-height: 0;
