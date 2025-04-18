@@ -10,8 +10,13 @@ precision lowp float;
 uniform vec2 u_resolution;
 uniform float u_time;
 
-vec3 u_color0 = vec3(0.090, 0.192, 0.211); 
-vec3 u_color1 = vec3(0.101, 0.078, 0.137);
+const vec3 u_color0 = vec3(0.090, 0.192, 0.211); 
+const vec3 u_color1 = vec3(0.101, 0.078, 0.137);
+
+const float thickness = 0.065;
+const float tiles = 4.0;
+const float offset = 0.2/tiles;
+const float margin = 0.075;
 
 vec2 tile(vec2 st, float zoom)
 {
@@ -28,7 +33,7 @@ float rect(vec2 st, vec2 dim)
 {
     dim = 0.25-dim*0.25;
     vec2 uv = step(dim, st*(inv(st)));
-    return uv.x*uv.y;
+    return uv.y;
 }
 
 float stripe(float p, float w0, float w1, float offset) 
@@ -37,39 +42,22 @@ float stripe(float p, float w0, float w1, float offset)
     return step(w0, mod(p + offset, w));
 }
 
-float rand (vec2 st) 
-{
-    return fract(sin(dot(st.xy, vec2(20.9898, 78.233))) * 43758.513);
-}
-
 void main()
 {
-    vec2 st = gl_FragCoord.xy/u_resolution;
-    float stripeoffset = u_time/16.0;
-    float thickness = 0.065;
-    const float tiles = 4.0;
-    float offset = 0.2/tiles;
+    vec2 st = gl_FragCoord.xy/u_resolution;    
     
     // tile the scene
-    float row = floor(st.y*tiles);  
-    vec2 grid = tile(st, tiles);  
-    float rate = 0.6*row;
-    
-    float pct0, pct1;
-    
-    // draw four rects
-    for (int i = 0; i <= int(tiles); i++)
-        pct0 += rect(grid + vec2(-float(i), 0.0), vec2(1.0, 0.7));
-    
-    float frame = max(step(st.y, offset) + step(inv(st.y), offset), step(st.x, offset) + step(inv(st.x), offset));
+    vec2 grid = tile(st, tiles);
 
-    // cut out some shape
+    // cut out horizontal margins
+    float x = step(margin, grid.y) * step(margin, inv(grid.y));
     
-    pct0 -= stripe(rotate(grid, cos(dot(st.xy, vec2(row/3.0) + 1.3))).x, 0.02+rate*thickness, thickness, stripeoffset);
-    pct0 -= frame;
+    // cut out shape
+    float row = floor(st.y*tiles)/tiles;
+    float vary = 2.165*row;
+    float warp = rotate(grid + sin((u_time+row*4.0)/8.0)*(row+0.25), cos(dot(st.xy, vec2(row) + 2.0*vec2(0.590,0.730)))).x;
+    x -= stripe(warp, 0.015+vary*thickness, thickness, u_time/32.0);
     
-    // mix result
-    float res0 = clamp(pct0, 0.0, 1.0);
-    vec3 col = mix(u_color1, u_color0, res0);
-    gl_FragColor = vec4(col, 1.0);
+    // mix
+    gl_FragColor = vec4(mix(u_color1, u_color0, max(x, 0.0)), 1.0);
 }
