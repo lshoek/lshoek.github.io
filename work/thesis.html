@@ -1,74 +1,64 @@
-<!-- 
-
-  Lesley van Hoek
-    lesleyvanhoek.nl
-
-  Original template developed by Nisar Hassan Naqvi
-    https://github.com/nisarhassan12/portfolio-template/
-    https://nisar.dev
-
--->
+<!-- Lesley van Hoek (lesleyvanhoek.nl) -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
 
-  <title>lesleyvanhoek</title>
+	<title>lesleyvanhoek</title>
 
-  <meta name="description" content="software developer, researcher & artist in creative technology">
-  <meta name="keywords" content="lesley van hoek creative technology technologies media software developer" />
-  <link rel="stylesheet" href="../index.css" />
+	<meta name="description" content="software engineer, researcher & artist in creative technology">
+	<meta name="keywords" content="lesley van hoek creative technology technologies media software engineer developer" />
+	<link rel="stylesheet" href="../index.css" />
 </head>
 
 <body>
+	<div class="row">
+		<nav class="nav" role="navigation">
+			<ul class="nav__items">
+				<li class="nav__item"><a href="../index.html#work" class="nav__link">portfolio</a></li>
+				<li class="nav__item">
+					<a href="../index.html#about" class="nav__link">about</a>
+				</li>
+				<li class="nav__item">
+					<a href="../index.html#contact" class="nav__link">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-  <div class="row">
-    <nav class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="../index.html#work" class="nav__link">portfolio</a></li>
-        <li class="nav__item">
-          <a href="../index.html#about" class="nav__link">about</a>
-        </li>
-        <li class="nav__item">
-          <a href="../index.html#contact" class="nav__link">contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+	<main role="main">
 
-  <main role="main">
-
-  <section class="proj" id="proj">
-    <div class="row">
-      <div class="proj__boxes">
-
-        <div class="proj__box">
-          <div class="proj__text">
-            <h3>Evolving Virtual Embodied Agents using External Artifact Evaluations</h3>
-            <p>
-              <b>Abstract.</b> We present neatures, a prototype computational art system that demonstrates the potential of digitally evolving artificial organisms for generating aesthetically pleasing artifacts. Insect-like hexapedal agents act in a virtual environment which they can sense and manipulate through painting. Their cognitive models are designed in accordance with theory of situated cognition. Two experimental setups are investigated: painting with a narrow- and wide perspective vision sensor. Populations of agents are optimized for the aesthetic quality of their work using a custom complexity-based fitness function that solely evaluates the artifact. Our results suggest that a wide-perspective vision may be more suited for maximizing aesthetic fitness while narrow-perspective vision induces more behavioral complexity and artifact diversity. We recognize that both setups evolve distinct strategies with their own merits. We further discuss our results and propose future directions for the current approach.
-            </p>
-
-            <div class="proj__links">
-              <a href="https://github.com/lshoek/creative-evo-simulator" title="View Source Code" target="_blank">
-                <img src="../images/github.svg" class="proj__code" alt="GitHub">
-              </a>
-              <a href="https://github.com/lshoek/creative-evo-controller" title="View Source Code" target="_blank">
-                <img src="../images/github.svg" class="proj__code" alt="GitHub">
-              </a>
-            </div>
-          </div>
-          <div class="proj__image-box">
-            <img src="../images/neatures-proj.png" class="proj__image"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
+		<section class="proj" id="proj">
+			<div class="row">
+				<div class="proj__box">
+					<div class="proj__text">
+						<h3>Evolving Virtual Embodied Agents using External Artifact Evaluations</h3>
+<p><b>Abstract.</b> We present neatures, a prototype computational art system that demonstrates the potential of digitally evolving artificial organisms for generating aesthetically pleasing artifacts. Insect-like hexapedal agents act in a virtual environment which they can sense and manipulate through painting. Their cognitive models are designed in accordance with theory of situated cognition. Two experimental setups are investigated: painting with a narrow- and wide perspective vision sensor. Populations of agents are optimized for the aesthetic quality of their work using a custom complexity-based fitness function that solely evaluates the artifact. Our results suggest that a wide-perspective vision may be more suited for maximizing aesthetic fitness while narrow-perspective vision induces more behavioral complexity and artifact diversity. We recognize that both setups evolve distinct strategies with their own merits. We further discuss our results and propose future directions for the current approach.</p><br>
+						<div class="proj__links">
+						<a href="https://youtu.be/ocxzQ2vLQNU" target="_blank" class="btn">View Demo <span>&rarr;</span></a>
+						
+						<a href="https://github.com/lshoek/creative-evo-simulator" title="View Source Code" target="_blank"><img src="../images/github.svg" class="btn__icon" alt="GitHub"></a>
+						<a href="https://github.com/lshoek/creative-evo-controller" title="View Source Code" target="_blank"><img src="../images/github.svg" class="btn__icon" alt="GitHub"></a>
+						
+						</div>
+					</div>
+					<div class="proj__image-box">
+						<img src="../images/neatures-proj.png" title="" class="proj__image"/>
+						<p></p>
+						
+						
+						
+						<iframe src="https://youtube.com/embed/ocxzQ2vLQNU" title="View Demo" frameborder="0" allow="fullscreen" scrolling="no"></iframe>
+						
+						
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 
 </html>

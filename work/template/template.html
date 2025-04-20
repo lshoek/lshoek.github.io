@@ -1,0 +1,64 @@
+<!-- Lesley van Hoek (lesleyvanhoek.nl) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
+
+	<title>lesleyvanhoek</title>
+
+	<meta name="description" content="software engineer, researcher & artist in creative technology">
+	<meta name="keywords" content="lesley van hoek creative technology technologies media software engineer developer" />
+	<link rel="stylesheet" href="../index.css" />
+</head>
+
+<body>
+	<div class="row">
+		<nav class="nav" role="navigation">
+			<ul class="nav__items">
+				<li class="nav__item"><a href="../index.html#work" class="nav__link">portfolio</a></li>
+				<li class="nav__item">
+					<a href="../index.html#about" class="nav__link">about</a>
+				</li>
+				<li class="nav__item">
+					<a href="../index.html#contact" class="nav__link">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<main role="main">
+
+		<section class="proj" id="proj">
+			<div class="row">
+				<div class="proj__box">
+					<div class="proj__text">
+						{{content}}<br>
+						<div class="proj__links">
+						{% for x in button %}<a href="{{x.url}}" target="_blank" class="btn">{{x.label}} <span>&rarr;</span></a>
+						{% endfor %}
+						{% for x in github %}<a href="{{x.url}}" title="{{x.label}}" target="_blank"><img src="../images/github.svg" class="btn__icon" alt="GitHub"></a>
+						{% endfor %}
+						</div>
+					</div>
+					<div class="proj__image-box">
+						{% for x in image %}<img src="{{x.url}}" title="{{x.label}}" class="proj__image"/>
+						<p>{{x.label}}</p>
+						{% endfor %}
+						{% for x in video %}<video title="{{x.label}}" class="proj__image" loop autoplay/><source src="{{x.url}}"></video>
+						<p>{{x.label}}</p>
+						{% endfor %}
+						{% for x in embed %}
+						<iframe src="{{x.url}}" title="{{x.label}}" frameborder="0" allow="fullscreen" scrolling="no"></iframe>
+						{% endfor %}
+						{{extra}}
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>

@@ -30,32 +30,33 @@
 	<link rel="stylesheet" href="index.css" />
 	<link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
 	<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-	<script src='js/gradientmaps.min.js'></script>
+	<script src='js/gradientmaps.js'></script>
 </head>
 
 <body>
+	<div class="row">
+		<nav class="nav" role="navigation">
+			<ul class="nav__items">
+				<li class="nav__item"><a href="#work" class="nav__link">portfolio</a></li>
+				<li class="nav__item">
+					<a href="#about" class="nav__link">about</a>
+				</li>
+				<li class="nav__item">
+					<a href="#contact" class="nav__link">contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
 	<header class="header" role="banner" id="top">
-
 		<canvas id="glslCanvas" data-fragment-url="shaders/lines.fs" width="1024" height="1024"></canvas>
-		<div class="row">
-			<nav class="nav" role="navigation">
-				<ul class="nav__items">
-					<li class="nav__item"><a href="#work" class="nav__link">portfolio</a></li>
-					<li class="nav__item">
-						<a href="#about" class="nav__link">about</a>
-					</li>
-					<li class="nav__item">
-						<a href="#contact" class="nav__link">contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<script src='js/canvas.js'></script>
 		<div class="header__text-box row">
 			<div class="header__text">
 				<h1 class="heading-primary">
 					<span>Lesley van Hoek</span>
 				</h1>
-				<p>software developer, researcher & artist in creative technology</p>
+				<p>software engineer, researcher & artist in creative technology</p>
 			</div>
 		</div>
 	</header>
@@ -73,7 +74,7 @@
 							<img src="./images/nap_labs_icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">NAP Framework (2020-present)</div>
 							<a href="work/nap.html">
-								<img src="./images/nap_labs_icon.jpg" class="work__image__top" alt="NAP Framework" />
+								<img src="./images/nap_labs_icon.jpg" class="work__image__top" alt="NAP Framework"/>
 							</a>
 						</div>
 					</div>
@@ -83,8 +84,8 @@
 						<div class="work__image-box">
 							<img src="./images/neatures-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">MSc Thesis: Evolving Embodied Agents using External Artifact Evaluations (2020)</div>
-							<a href="work/thesis.html">
-								<img src="./images/neatures-icon.jpg" class="work__image__top" alt="MSc Thesis" />
+							<a href="work/thesis.html">1
+								<img src="./images/neatures-icon.jpg" class="work__image__top" alt="MSc Thesis"/>
 							</a>
 						</div>
 					</div>
@@ -94,7 +95,7 @@
 							<img src="./images/aso-asf-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">And So On, And So Forth (2020)</div>
 							<a href="work/asoasf.html">
-								<img src="./images/aso-asf-icon.jpg" class="work__image__top" alt="And so on, and so forth" />
+								<img src="./images/aso-asf-icon.jpg" class="work__image__top" alt="And so on, and so forth"/>
 							</a>
 						</div>
 					</div>
@@ -104,7 +105,7 @@
 							<img src="./images/artefacts-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Artefacts of Verisimilitudes (2019)</div>
 							<a href="work/artefacts.html">
-								<img src="./images/artefacts-icon.jpg" class="work__image__top" alt="Artefacts of Verisimilitudes" />
+								<img src="./images/artefacts-icon.jpg" class="work__image__top" alt="Artefacts of Verisimilitudes"/>
 							</a>
 						</div>
 					</div>
@@ -114,7 +115,7 @@
 							<img src="./images/reef-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Koraalreef real-time visuals (2019)</div>
 							<a href="work/reef.html">
-								<img src="./images/reef-icon.jpg" class="work__image__top" alt="Koraalreef" />
+								<img src="./images/reef-icon.jpg" class="work__image__top" alt="Koraalreef"/>
 							</a>
 						</div>
 					</div>
@@ -124,7 +125,7 @@
 							<img src="./images/vsmi-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Research project: Virtual Influencers (2019)</div>
 							<a href="work/vsmi.html">
-								<img src="./images/vsmi-icon.jpg" class="work__image__top" alt="Research project: Virtual Influencers" />
+								<img src="./images/vsmi-icon.jpg" class="work__image__top" alt="Research project: Virtual Influencers"/>
 							</a>
 						</div>
 					</div>
@@ -133,8 +134,8 @@
 						<div class="work__image-box">
 							<img src="./images/certaintyposter-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Certainty poster design (2020)</div>
-							<a href="work/certaintyposter.html">
-								<img src="./images/certaintyposter-icon.jpg" class="work__image__top" alt="Certainty Poster" />
+							<a href="work/certainty.html">
+								<img src="./images/certaintyposter-icon.jpg" class="work__image__top" alt="Certainty Poster"/>
 							</a>
 						</div>
 					</div>
@@ -144,7 +145,7 @@
 							<img src="./images/wormchat-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Wormchat (2019)</div>
 							<a href="work/wormchat.html">
-								<img src="./images/wormchat-icon.jpg" class="work__image__top" alt="Wormchat" />
+								<img src="./images/wormchat-icon.jpg" class="work__image__top" alt="Wormchat"/>
 							</a>
 						</div>
 					</div>
@@ -154,7 +155,7 @@
 							<img src="./images/redundancy-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Redundancy (2019)</div>
 							<a href="work/redundancy.html">
-								<img src="./images/redundancy-icon.jpg" class="work__image__top" alt="Redundancy" />
+								<img src="./images/redundancy-icon.jpg" class="work__image__top" alt="Redundancy"/>
 							</a>
 						</div>
 					</div>
@@ -164,7 +165,7 @@
 							<img src="./images/shush-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Shush (2019)</div>
 							<a href="work/shush.html">
-								<img src="./images/shush-icon.jpg" class="work__image__top" alt="Shush" />
+								<img src="./images/shush-icon.jpg" class="work__image__top" alt="Shush"/>
 							</a>
 						</div>
 					</div>
@@ -174,7 +175,7 @@
 							<img src="./images/encryption-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Encryption (2019)</div>
 							<a href="work/encryption.html">
-								<img src="./images/encryption-icon.jpg" class="work__image__top" alt="Scientific Narration: Encryption" />
+								<img src="./images/encryption-icon.jpg" class="work__image__top" alt="Scientific Narration: Encryption"/>
 							</a>
 						</div>
 					</div>
@@ -184,7 +185,7 @@
 							<img src="./images/shymirror-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Shy Mirror</div>
 							<a href="work/shymirror.html">
-								<img src="./images/shymirror-icon.jpg" class="work__image__top" alt="Shy Mirror" />
+								<img src="./images/shymirror-icon.jpg" class="work__image__top" alt="Shy Mirror"/>
 							</a>
 						</div>
 					</div>
@@ -194,7 +195,7 @@
 							<img src="./images/shadowui-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Floor Shadow UI (2018)</div>
 							<a href="work/shadowui.html">
-								<img src="./images/shadowui-icon.jpg" class="work__image__top" alt="Shadow UI" />
+								<img src="./images/shadowui-icon.jpg" class="work__image__top" alt="Shadow UI"/>
 							</a>
 						</div>
 					</div>
@@ -204,7 +205,7 @@
 							<img src="./images/rick-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Rick Astley: Deconstructed (2018)</div>
 							<a href="work/rick.html">
-								<img src="./images/rick-icon.jpg" class="work__image__top" alt="Rick Astley: Deconstructed" />
+								<img src="./images/rick-icon.jpg" class="work__image__top" alt="Rick Astley: Deconstructed"/>
 							</a>
 						</div>
 					</div>
@@ -214,7 +215,7 @@
 							<img src="./images/blueware-icon.jpg" class="work__image__bottom"/>
 							<div class="work__image__textbox">Augmented Blueware (2018)</div>
 							<a href="work/blueware.html">
-								<img src="./images/blueware-icon.jpg" class="work__image__top" alt="Augmented Blueware" style="max-width:256px" />
+								<img src="./images/blueware-icon.jpg" class="work__image__top" alt="Augmented Blueware"/>
 							</a>
 						</div>
 					</div>
@@ -244,7 +245,6 @@
 		</section>
 	</main>
 
-	<!-- Contact -->
 	<section class="contact" id="contact">
 		<div class="row">
 			<h2>contact</h2>
@@ -260,37 +260,29 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
 	<footer role="contentinfo" class="footer">
 		<div class="row">
 			<ul class="footer__social-links">
 
-				<li class="footer__social-link-item">
-					<a href="https://instagram.com/kuriosalesley/">
-						<img src="./images/instagram.svg" title="instagram" class="footer__social-image" alt="Linkedin">
+					<a href="https://instagram.com/kuriosalesley/" title="instagram" target="_blank">
+						<img src="./images/instagram.svg" title="instagram" class="btn__icon" alt="Linkedin">
 					</a>
-				</li>
 
-				<li class="footer__social-link-item">
-					<a href="https://github.com/lshoek/" title="github">
-						<img src="./images/github.svg" class="footer__social-image" alt="github">
+					<a href="https://github.com/lshoek/" title="github" target="_blank">
+						<img src="./images/github.svg" class="btn__icon" alt="github">
 					</a>
-				</li>
 
-				<li class="footer__social-link-item">
-					<a href="https://soundcloud.com/kuriosadj/">
-						<img src="./images/soundcloud.svg" title="soundcloud" class="footer__social-image" alt="soundcloud">
+					<a href="https://soundcloud.com/kuriosadj/" title="instagram" target="_blank">
+						<img src="./images/soundcloud.svg" title="soundcloud" class="btn__icon" alt="soundcloud">
 					</a>
-				</li>
 
-				<li class="footer__social-link-item">
-					<a href="https://www.linkedin.com/in/lesleyvanhoek/">
-						<img src="./images/linkedin.svg" title="linkedin" class="footer__social-image" alt="Linkedin">
+					<a href="https://www.linkedin.com/in/lesleyvanhoek/" title="instagram" target="_blank">
+						<img src="./images/linkedin.svg" title="linkedin" class="btn__icon" alt="Linkedin">
 					</a>
-				</li>
 			</ul>
 		</div>
 	</footer>
+	<script src="./js/gradient.js"></script>
 	<script src="./index.js"></script>
 </body>
 
