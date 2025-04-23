@@ -1,5 +1,6 @@
 ___content___
 ### Within Without I & II
+#### Nick Verstand, 2021
 
 The Within Without software is a custom NAP application that animates, controls and pre-visualizes about 9000 LEDs embedded in a massive ring at 1000Hz. It was commissioned for a special performance lead by [Nick Verstand](https://nickverstand.com) in Royal Theater Carré. The performance was such a success, that the ring continued to appear at the VMA's and Awakenings ADE.
 

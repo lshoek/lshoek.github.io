@@ -1,6 +1,8 @@
 ___content___
 ### Research project: Parasocial relationships with virtual influencers
-A small research project testing virtual social media influencers as a social innovation/technology. I conducted an experiment by writing a tool that scraped the top posts of selected Instagram accounts (among which @lilmiquela). Then, a sentiment analysis was performed on the results.
+#### 2019
+
+A small research project testing virtual social media influencers as a social innovation/technology. I conducted an experiment by writing a tool that scraped the top posts of selected Instagram accounts (among which [@lilmiquela](https://www.instagram.com/lilmiquela/)). Then, a sentiment analysis was performed on the results.
 
 *Excerpts of introduction:*
 

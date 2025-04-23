@@ -1,5 +1,6 @@
 ___content___
 ### NAP Framework
+#### 2020 - present
 
 NAP is a C++ open-source real-time control & visualization platform used to build large audiovisual installations & control high-precision robotics.
 
@@ -27,7 +28,7 @@ ___github___
 ___end___
 
 ___image___
-![](../images/nap_logo_blue.svg)
-![](../images/flock.jpg)
-![](../images/fft.jpg)
+![NAP Framework logo](../images/nap_logo_blue.svg)
+![NAP flocking demo](../images/flock.jpg)
+![NAP FFT demo](../images/fft.jpg)
 ___end___

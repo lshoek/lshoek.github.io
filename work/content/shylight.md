@@ -1,5 +1,6 @@
 ___content___
 ### Shylight & Shy Society
+#### Studio DRIFT, 2020
 
 Text coming soon!
 

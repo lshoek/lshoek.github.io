@@ -46,13 +46,14 @@
 					</div>
 					<div class="proj__image-box">
 						{% for x in image %}<img src="{{x.url}}" title="{{x.label}}" class="proj__image"/>
-						<p>{{x.label}}</p>
+						<div class = "caption">{{x.label}}</div>
 						{% endfor %}
 						{% for x in video %}<video title="{{x.label}}" class="proj__image" loop autoplay/><source src="{{x.url}}"></video>
-						<p>{{x.label}}</p>
+						<div class = "caption">{{x.label}}</div>
 						{% endfor %}
 						{% for x in embed %}
 						<iframe src="{{x.url}}" title="{{x.label}}" width="{{x.x|default('640')}}" height="{{x.y|default('360')}}" frameborder="0" allow="fullscreen" scrolling="no"></iframe>
+						<div class = "caption">{{x.label}}</div>
 						{% endfor %}
 						{{extra}}
 					</div>

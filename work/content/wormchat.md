@@ -1,5 +1,7 @@
 ___content___
 ### Wormchat: bi-directional wormhole communication system
+#### 2019
+
 A wormhole is a speculative structure that connects two locations in our universe with a space-time bridge that resembles a tunnel between two black holes [1][2]. It is a popular phenomenon in science fiction because it allows for deep space travel within a human lifetime [3]. As wormholes only exist in theory, they have never been observed in the real world and their shape is only known through simulation. Corvin Zahn created a visualization of a wormhole using a 4D ray tracer in 2008 [4]. The most important aspect of this structure is that it creates a shortcut between two distant points in a three-dimensional space. This sparked a string of ideas that lead me to experiment with space projections in openFrameworks.
 
 - [1] Perkowitz, Sidney. (2010). Wormhole. https://www.britannica.com/science/wormhole
