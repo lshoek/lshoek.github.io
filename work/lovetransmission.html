@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
+	<link rel="shortcut icon" type="image/ico" href="../images/icon/favicon.ico" />
 
 	<title>lesleyvanhoek</title>
 
@@ -36,25 +36,20 @@
 			<div class="row">
 				<div class="proj__box">
 					<div class="proj__text">
-						{{content}}<br>
+						<h3>Love Transmission live visuals</h3>
+<p>A modest yet powerful tool for real-time audioreactive posters. Aimed for personal use, but free for anyone to use and expected to be in development for future parties I will be hosting.</p><br>
 						<div class="proj__links">
-						{% for x in button %}<a href="{{x.url}}" target="_blank" class="btn">{{x.label}} <span>&rarr;</span></a>
-						{% endfor %}
-						{% for x in github %}<a href="{{x.url}}" title="{{x.label}}" target="_blank"><img src="../images/github.svg" class="btn__icon" alt="GitHub"></a>
-						{% endfor %}
+						<a href="https://lovetransmission.nl/" target="_blank" class="btn">Love Transmission <span>&rarr;</span></a>
+						
+						<a href="https://github.com/lshoek/loveposters" title="View Source Code" target="_blank"><img src="../images/icons/github.svg" class="btn__icon" alt="GitHub"></a>
+						
 						</div>
 					</div>
 					<div class="proj__image-box">
-						{% for x in image %}<img src="{{x.url}}" title="{{x.label}}" class="proj__image"/>
-						<p>{{x.label}}</p>
-						{% endfor %}
-						{% for x in video %}<video title="{{x.label}}" class="proj__image" loop autoplay/><source src="{{x.url}}"></video>
-						<p>{{x.label}}</p>
-						{% endfor %}
-						{% for x in embed %}
-						<iframe src="{{x.url}}" title="{{x.label}}" frameborder="0" allow="fullscreen" scrolling="no"></iframe>
-						{% endfor %}
-						{{extra}}
+						
+						
+						
+						
 					</div>
 				</div>
 			</div>

@@ -10,6 +10,6 @@ ___button___
 ___end___
 
 ___embed___
-[](https://www.youtube.com/embed/6AtoYX-uRhc")
-[](https://www.youtube.com/embed/nmb7Occ7new")
+[](https://www.youtube.com/embed/6AtoYX-uRhc"){640,360}
+[](https://www.youtube.com/embed/nmb7Occ7new"){640,360}
 ___end___

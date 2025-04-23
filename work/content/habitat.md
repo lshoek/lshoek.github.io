@@ -16,5 +16,5 @@ ___image___
 ___end___
 
 ___embed___
-[](https://youtube.com/embed/VKVGwz1Fb1E)
+[](https://youtube.com/embed/VKVGwz1Fb1E){640,360}
 ___end___

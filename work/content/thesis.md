@@ -17,5 +17,5 @@ ___image___
 ___end___
 
 ___embed___
-[View Demo](https://youtube.com/embed/ocxzQ2vLQNU)
+[View Demo](https://youtube.com/embed/ocxzQ2vLQNU){640,360}
 ___end___

@@ -19,7 +19,7 @@ I wrote a number of blogs about my work at NAP:
 ___end___
 
 ___button___
-[NAP Labs](https://github.com/napframework/nap)
+[NAP Labs](https://nap-labs.tech)
 ___end___
 
 ___github___

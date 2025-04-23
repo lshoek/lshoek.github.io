@@ -23,5 +23,5 @@ ___image___
 ___end___
 
 ___embed___
-[View Demo](https://player.vimeo.com/video/347633573)
+[View Demo](https://player.vimeo.com/video/347633573){640,360}
 ___end___
