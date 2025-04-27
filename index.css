@@ -21,7 +21,7 @@
 }
 
 :root {
-	--font-size-xs: 1rem;
+	--font-size-xs: 1.125rem;
 	--font-size-s: 1.5rem;
 	--font-size-m: 2rem;
 	--font-size-l: 3rem;
@@ -356,8 +356,8 @@ and (max-device-width : 480px) {
 }
 
 .work__image-box {
-	width: 384px;
-	height: 384px;
+	width: 32rem;
+	height: 32rem;
 	position: relative;
 	font-size: 0;
 	line-height: 0;
@@ -394,19 +394,8 @@ and (max-device-width : 480px) {
 	color: var(--color-front);
 	background-color: var(--color-back-transparent);
 	font-size: var(--font-size-s);
+	z-index:1;
 }
-
-.gradient-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
-	mix-blend-mode: multiply; /* Try multiply, screen, darken, etc. */
-	pointer-events: none;
-}
-
 
 /* ----- Project ----- */
 
