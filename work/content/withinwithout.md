@@ -4,6 +4,14 @@ ___content___
 
 The Within Without software is a custom NAP application that animates, controls and pre-visualizes about 9000 LEDs embedded in a massive ring at 1000Hz. It was commissioned for a special performance lead by [Nick Verstand](https://nickverstand.com) in Royal Theater Carré. The performance was such a success, that the ring continued to appear at the VMA's and Awakenings ADE.
 
+My contribution this project was designing and building the control application, which comprised the following:
+
+- A set of pre-programmed light effects
+- A flexible effect-composition system to layer said effects
+- A customizable OSC interface to control effect parameters from external software (i.e. Ableton Live)
+- 3D pre-visualization of the light ring
+- A mapping tool for addressing the correct microcontrollers on the ring
+
 I wrote a technical blog post about the sofware development of Within Without:  
 - [The Software Powering Within Without's Light Ring](https://blog.nap-framework.tech/d5/d6f/md_articles_003_within_without)  
 
