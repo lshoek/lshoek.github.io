@@ -30,7 +30,6 @@
 	<link rel="stylesheet" href="index.css" />
 	<link rel="shortcut icon" type="image/ico" href="./images/icons/favicon.ico" />
 	<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-	<script src='js/gradientmaps.js'></script>
 </head>
 
 <body>
@@ -65,242 +64,256 @@
 
 		<!-- Work -->
 		<section class="work" id="work">
+
+			<svg version="1.1" width="0" height="0">
+				<filter id="filter">
+					<feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" result="gray"></feColorMatrix>
+					<feComponentTransfer color-interpolation-filters="sRGB">
+						<feFuncR type="table" tableValues="0.1 0"/>
+						<feFuncG type="table" tableValues="0.08 0.94"/>
+						<feFuncB type="table" tableValues="0.14 0.71"/>
+						<feFuncA type="table" tableValues="0 1"/>
+					</feComponentTransfer>
+				</filter>
+			</svg>
+
 			<div class="row">
 				<h2>portfolio</h2>
-				<div class="work__boxes">
+			</div>
 
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/nap-labs_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">NAP Framework (2020-present)</div>
-							<a href="work/nap.html">
-								<img src="./images/icons/nap-labs_icon.jpg" class="work__image__top" alt="NAP Framework"/>
-							</a>
-						</div>
+			<div class="work__boxes">
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/nap-labs_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">NAP Framework (2020-present)</div>
+						<a href="work/nap.html">
+							<img src="./images/icons/nap-labs_icon.jpg" class="work__image__top" alt="NAP Framework" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
 					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/loveposters_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Love Posters live visuals (2023)</div>
-							<a href="work/loveposters.html">
-								<img src="./images/icons/loveposters_icon.jpg" class="work__image__top" alt="Love Posters"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/codednature02_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Coded Nature II - 
-							Studio DRIFT (2024)</div>
-							<a href="work/codednature02.html">
-								<img src="./images/icons/codednature02_icon.jpg" class="work__image__top" alt="Coded Nature II"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/codednature01_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Coded Nature I - Studio DRIFT (2023)</div>
-							<a href="work/codednature01.html">
-								<img src="./images/icons/codednature01_icon.jpg" class="work__image__top" alt="Coded Nature I"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/arbor_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Arbor - Vincent Rang (2023)</div>
-							<a href="work/arbor.html">
-								<img src="./images/icons/arbor_icon.jpg" class="work__image__top" alt="Arbor"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/iamstorm_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">I Am Storm - Studio DRIFT (2022)</div>
-							<a href="work/iamstorm.html">
-								<img src="./images/icons/iamstorm_icon.jpg" class="work__image__top" alt="I Am Storm"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/withinwithout_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Within Without I & II - Nick Verstand (2021)</div>
-							<a href="work/withinwithout.html">
-								<img src="./images/icons/withinwithout_icon.jpg" class="work__image__top" alt="Within Without"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/shylight_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Shylight - Studio DRIFT (2020)</div>
-							<a href="work/shylight.html">
-								<img src="./images/icons/shylight_icon.jpg" class="work__image__top" alt="Shylight"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/habitat_icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Habitat - Heleen Blanken (2020)</div>
-							<a href="work/habitat.html">
-								<img src="./images/icons/habitat_icon.jpg" class="work__image__top" alt="Habitat"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/neatures-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">MSc Thesis: Evolving Embodied Agents using External Artifact Evaluations (2020)</div>
-							<a href="work/thesis.html">1
-								<img src="./images/icons/neatures-icon.jpg" class="work__image__top" alt="MSc Thesis"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/aso-asf-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">And So On, And So Forth (2020)</div>
-							<a href="work/asoasf.html">
-								<img src="./images/icons/aso-asf-icon.jpg" class="work__image__top" alt="And so on, and so forth"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/artefacts-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Artefacts of Verisimilitudes (2019)</div>
-							<a href="work/artefacts.html">
-								<img src="./images/icons/artefacts-icon.jpg" class="work__image__top" alt="Artefacts of Verisimilitudes"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/reef-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Koraalreef live visuals (2019)</div>
-							<a href="work/reef.html">
-								<img src="./images/icons/reef-icon.jpg" class="work__image__top" alt="Koraalreef"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/vsmi-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Research project: Virtual Influencers (2019)</div>
-							<a href="work/vsmi.html">
-								<img src="./images/icons/vsmi-icon.jpg" class="work__image__top" alt="Research project: Virtual Influencers"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/certaintyposter-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Certainty poster design (2019)</div>
-							<a href="work/certainty.html">
-								<img src="./images/icons/certaintyposter-icon.jpg" class="work__image__top" alt="Certainty Poster"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/wormchat-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Wormchat (2019)</div>
-							<a href="work/wormchat.html">
-								<img src="./images/icons/wormchat-icon.jpg" class="work__image__top" alt="Wormchat"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/redundancy-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Redundancy (2019)</div>
-							<a href="work/redundancy.html">
-								<img src="./images/icons/redundancy-icon.jpg" class="work__image__top" alt="Redundancy"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/shush-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Shush (2019)</div>
-							<a href="work/shush.html">
-								<img src="./images/icons/shush-icon.jpg" class="work__image__top" alt="Shush"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/encryption-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Encryption (2019)</div>
-							<a href="work/encryption.html">
-								<img src="./images/icons/encryption-icon.jpg" class="work__image__top" alt="Scientific Narration: Encryption"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/shymirror-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Shy Mirror</div>
-							<a href="work/shymirror.html">
-								<img src="./images/icons/shymirror-icon.jpg" class="work__image__top" alt="Shy Mirror"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/shadowui-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Floor Shadow UI (2018)</div>
-							<a href="work/shadowui.html">
-								<img src="./images/icons/shadowui-icon.jpg" class="work__image__top" alt="Shadow UI"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/rick-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Rick Astley: Deconstructed (2018)</div>
-							<a href="work/rick.html">
-								<img src="./images/icons/rick-icon.jpg" class="work__image__top" alt="Rick Astley: Deconstructed"/>
-							</a>
-						</div>
-					</div>
-
-					<div class="work__box">
-						<div class="work__image-box">
-							<img src="./images/icons/blueware-icon.jpg" class="work__image__bottom"/>
-							<div class="work__image__textbox">Augmented Blueware (2018)</div>
-							<a href="work/blueware.html">
-								<img src="./images/icons/blueware-icon.jpg" class="work__image__top" alt="Augmented Blueware"/>
-							</a>
-						</div>
-					</div>
-
 				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/loveposters_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Love Posters live visuals (2023)</div>
+						<a href="work/loveposters.html">
+							<img src="./images/icons/loveposters_icon.jpg" class="work__image__top" alt="Love Posters" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/codednature02_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Coded Nature II - 
+						Studio DRIFT (2024)</div>
+						<a href="work/codednature02.html">
+							<img src="./images/icons/codednature02_icon.jpg" class="work__image__top" alt="Coded Nature II" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/codednature01_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Coded Nature I - Studio DRIFT (2023)</div>
+						<a href="work/codednature01.html">
+							<img src="./images/icons/codednature01_icon.jpg" class="work__image__top" alt="Coded Nature I" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/arbor_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Arbor - Vincent Rang (2023)</div>
+						<a href="work/arbor.html">
+							<img src="./images/icons/arbor_icon.jpg" class="work__image__top" alt="Arbor" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/iamstorm_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">I Am Storm - Studio DRIFT (2022)</div>
+						<a href="work/iamstorm.html">
+							<img src="./images/icons/iamstorm_icon.jpg" class="work__image__top" alt="I Am Storm" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/withinwithout_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Within Without I & II - Nick Verstand (2021)</div>
+						<a href="work/withinwithout.html">
+							<img src="./images/icons/withinwithout_icon.jpg" class="work__image__top" alt="Within Without" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/shylight_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Shylight - Studio DRIFT (2020)</div>
+						<a href="work/shylight.html">
+							<img src="./images/icons/shylight_icon.jpg" class="work__image__top" alt="Shylight" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/habitat_icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Habitat - Heleen Blanken (2020)</div>
+						<a href="work/habitat.html">
+							<img src="./images/icons/habitat_icon.jpg" class="work__image__top" alt="Habitat" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/neatures-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">MSc Thesis: Evolving Embodied Agents using External Artifact Evaluations (2020)</div>
+						<a href="work/thesis.html">1
+							<img src="./images/icons/neatures-icon.jpg" class="work__image__top" alt="MSc Thesis" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/aso-asf-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">And So On, And So Forth (2020)</div>
+						<a href="work/asoasf.html">
+							<img src="./images/icons/aso-asf-icon.jpg" class="work__image__top" alt="And so on, and so forth" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/artefacts-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Artefacts of Verisimilitudes (2019)</div>
+						<a href="work/artefacts.html">
+							<img src="./images/icons/artefacts-icon.jpg" class="work__image__top" alt="Artefacts of Verisimilitudes" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/reef-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Koraalreef live visuals (2019)</div>
+						<a href="work/reef.html">
+							<img src="./images/icons/reef-icon.jpg" class="work__image__top" alt="Koraalreef" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/vsmi-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Research project: Virtual Influencers (2019)</div>
+						<a href="work/vsmi.html">
+							<img src="./images/icons/vsmi-icon.jpg" class="work__image__top" alt="Research project: Virtual Influencers" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/certaintyposter-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Certainty poster design (2019)</div>
+						<a href="work/certainty.html">
+							<img src="./images/icons/certaintyposter-icon.jpg" class="work__image__top" alt="Certainty Poster" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/wormchat-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Wormchat (2019)</div>
+						<a href="work/wormchat.html">
+							<img src="./images/icons/wormchat-icon.jpg" class="work__image__top" alt="Wormchat" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/redundancy-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Redundancy (2019)</div>
+						<a href="work/redundancy.html">
+							<img src="./images/icons/redundancy-icon.jpg" class="work__image__top" alt="Redundancy" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/shush-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Shush (2019)</div>
+						<a href="work/shush.html">
+							<img src="./images/icons/shush-icon.jpg" class="work__image__top" alt="Shush" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/encryption-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Encryption (2019)</div>
+						<a href="work/encryption.html">
+							<img src="./images/icons/encryption-icon.jpg" class="work__image__top" alt="Scientific Narration: Encryption" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/shymirror-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Shy Mirror (2019)</div>
+						<a href="work/shymirror.html">
+							<img src="./images/icons/shymirror-icon.jpg" class="work__image__top" alt="Shy Mirror" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/shadowui-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Floor Shadow UI (2018)</div>
+						<a href="work/shadowui.html">
+							<img src="./images/icons/shadowui-icon.jpg" class="work__image__top" alt="Shadow UI" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/rick-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Rick Astley: Deconstructed (2018)</div>
+						<a href="work/rick.html">
+							<img src="./images/icons/rick-icon.jpg" class="work__image__top" alt="Rick Astley: Deconstructed" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
+				<div class="work__box">
+					<div class="work__image-box">
+						<img src="./images/icons/blueware-icon.jpg" class="work__image__bottom"/>
+						<div class="work__image__textbox">Augmented Blueware (2018)</div>
+						<a href="work/blueware.html">
+							<img src="./images/icons/blueware-icon.jpg" class="work__image__top" alt="Augmented Blueware" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
+						</a>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
@@ -318,7 +331,7 @@
 					</div>
 
 					<div class="about__photo-container">
-						<img class="about__photo" src="images/profile.jpg" alt="" />
+						<img class="about__photo" src="images/profile.jpg" data-gradientmap-filter="filter" style='filter: url("#filter");'/>
 					</div>
 				</div>
 			</div>
@@ -362,8 +375,6 @@
 			</ul>
 		</div>
 	</footer>
-	<script src="./js/gradient.js"></script>
-	<script src="./index.js"></script>
 </body>
 
 </html>

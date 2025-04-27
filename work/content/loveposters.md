@@ -8,7 +8,7 @@ Text coming soon!
 ___end___
 
 ___button___
-[Love Transmission](https://lovetransmission.nl/)
+[lovetransmission.nl](https://lovetransmission.nl/)
 ___end___
 
 ___github___

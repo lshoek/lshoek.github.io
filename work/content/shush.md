@@ -10,7 +10,3 @@ ___end___
 ___github___
 [View Source Code](https://github.com/lshoek/shush)
 ___end___
-
-___image___
-![](../images/na.png")
-___end___
