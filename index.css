@@ -298,9 +298,11 @@ a:hover {
 
 #glslCanvas {
 	position: absolute;
+	transform: translate(-50%,-50%);
 	top: 50%;
 	left: 50%;
-	height: 75vh;
+	width: 80vmin;
+	height: 80vmin;
 	z-index: 0;
 }
 

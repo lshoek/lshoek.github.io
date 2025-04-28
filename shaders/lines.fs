@@ -2,7 +2,7 @@
 // Title: Stripe Patterns
 
 #ifdef GL_ES
-precision lowp float;
+precision mediump float;
 #endif
 
 #define inv(x) 1.0 - x

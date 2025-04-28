@@ -13,8 +13,8 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta property="og:title" content="Lesley van Hoek"/>
 	<meta property="og:type" content="portfolio"/>
 	<meta property="og:url" content="https://lesleyvanhoek.nl"/>
@@ -27,8 +27,8 @@
 	<meta name="keywords" content="lesley van hoek creative technology technologies media software developer"/>
 	<meta name="src_img" content="https://lesleyvanhoek.nl/images/profile.jpg"/>
 
-	<link rel="stylesheet" href="index.css" />
-	<link rel="shortcut icon" type="image/ico" href="./images/icons/favicon.ico" />
+	<link rel="stylesheet" href="index.css"/>
+	<link rel="shortcut icon" type="image/ico" href="./images/icons/favicon.ico"/>
 	<script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 </head>
 
@@ -48,8 +48,13 @@
 	</div>
 	
 	<header class="header" role="banner" id="top">
+
 		<canvas id="glslCanvas" data-fragment-url="shaders/lines.fs" width="1024" height="1024"></canvas>
-		<script src='js/canvas.js'></script>
+		<script>
+			var canvas = document.getElementById("glslCanvas");
+			var sandbox = new GlslCanvas(canvas);
+		</script>
+
 		<div class="header__text-box row">
 			<div class="header__text">
 				<h1 class="heading-primary">
