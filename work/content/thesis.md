@@ -25,5 +25,7 @@ ___image___
 ___end___
 
 ___embed___
+[A video presentation of my research for BNAIC-Benelearn Conference on Artificial Intelligence 2020](https://youtube.com/embed/jDzTq0Rv93c){640,360}
+
 [A video of the training process in Neatures](https://youtube.com/embed/ocxzQ2vLQNU){640,360}
 ___end___
